@@ -126,7 +126,9 @@
         /* Enlace pegado debajo de la imagen */
     .doc-link {
       display: block;
-      width: 50%;
+      width: 100%;             /* Se adapta exactamente al ancho de la imagen */
+      max-width: 500px;        /* Mismo ancho máximo que la miniatura */
+      margin: -4px auto 0 auto;/* Centrado horizontalmente y pegado a la imagen */
       box-sizing: border-box;
       background: #1e3a8a;
       color: #ffffff;
@@ -212,14 +214,13 @@
         padding: 8px 10px;
       }
 
-      .video-block {
+      /* Contenedor del video y documento (DEBE ir fuera de @media) */
+    .video-block {
       display: inline-flex;
       flex-direction: column;
       align-items: center;
       max-width: 500px;
       width: 100%;
-    }
-      
     }
   </style>
 </head>
