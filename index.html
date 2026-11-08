@@ -123,6 +123,28 @@
       opacity: 1;
     }
 
+        /* Enlace pegado debajo de la imagen */
+    .doc-link {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      background: #1e3a8a;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px 12px;
+      border-radius: 0 0 8px 8px;
+      letter-spacing: 0.3px;
+      transition: background-color 0.2s ease;
+      margin-top: -4px; /* Elimina cualquier separación diminuta con la imagen */
+    }
+
+    .doc-link:hover {
+      background: #2563eb;
+      text-decoration: none;
+    }
+
     tr:nth-child(even) {
       background: #f1f5f9;
     }
